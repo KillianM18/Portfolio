@@ -604,10 +604,7 @@
                 </div>
 
                 <!-- Colonne de droite pour le formulaire de contact -->
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <input type="hidden" name="access_key" value="d26c93ec-7242-4689-a332-f956f4e69bc3">
-                    <input type="hidden" name="redirect" value="index.html">
-
+                <form id="form" class="contact-form">
                     <div class="form-group">
                         <label for="name">Nom complet</label>
                         <input type="text" id="name" name="name" required placeholder="Votre nom">
@@ -721,10 +718,11 @@
         </div>
     </div>
 
+    <div id="notifier" class="notifier"></div>
+
     <script src="assets/js/nav.js"></script>
     <script src="assets/js/bouton.js"></script>
     <script src="assets/js/projets.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="assets/js/contact.js"></script>
     <script src="assets/js/cv.js"></script>
     <script src="assets/js/legal.js"></script>
